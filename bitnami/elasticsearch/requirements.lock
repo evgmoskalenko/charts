@@ -1,6 +1,6 @@
 dependencies:
 - name: kibana
   repository: https://charts.bitnami.com/bitnami
-  version: 5.2.4
-digest: sha256:7e9c40e942e04d3aab49ae8b7feb6521bc860dc93f2ea5dfcf2e3e680e253375
-generated: "2020-06-09T12:23:24.396411731Z"
+  version: 5.3.4
+digest: sha256:0f38b6cdaa42bea66b5ddef9e30086741c126165e6cb665d5f0591ed6c6ca986
+generated: "2020-07-28T14:38:31.7342344Z"

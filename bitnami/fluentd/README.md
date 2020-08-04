@@ -2,7 +2,7 @@
 
 [Fluentd](https://www.fluentd.org/) is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.
 
-## TL;DR;
+## TL;DR
 
 ```console
 $ helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -48,7 +48,7 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Parameters
 
-The following tables lists the configurable parameters of the kibana chart and their default values.
+The following tables lists the configurable parameters of the fluentd chart and their default values.
 
 | Parameter                                       | Description                                                                                                    | Default                                                                                                 |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|

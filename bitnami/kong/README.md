@@ -2,7 +2,7 @@
 
 [Kong](https://konghq.com/kong/) is a scalable, open source API layer (aka API gateway or API middleware) that runs in front of any RESTful API. Extra functionalities beyond the core platform are extended through plugins. Kong is built on top of reliable technologies like NGINX and provides an easy-to-use RESTful API to operate and configure the system.
 
-## TL;DR;
+## TL;DR
 
 ```console
   helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -171,7 +171,7 @@ The following tables list the configurable parameters of the kong chart and thei
 | `ingressController.extraEnvVarsSecret`          | Secret containing extra env vars to configure Kong Ingress Controller (in case of sensitive data)                                                     | `nil`                                                                                                       |
 | `ingressController.rbac.create`                 | Create the necessary Service Accounts, Roles and Rolebindings for the Ingress Controller to work                                                      | `true`                                                                                                      |
 | `ingressController.rbac.existingServiceAccount` | Use an existing service account for all the RBAC operations                                                                                           | `nil`                                                                                                       |
-| `ingressController.installCRDs`                 | Install CustomResourceDefinitions (for Helm 2 support)                                                                                                | `false`                                                                                                     |
+| `ingressController.installCRDs`                 | Install CustomResourceDefinitions (use `--skip-crds` on Helm 3)                                                                                     | `true`                                                                                                     |
 | `ingressController.customResourceDeletePolicy`  | Add custom CRD resource delete policy (for Helm 2 support)                                                                                            | `nil`                                                                                                       |
 | `ingressController.rbac.existingServiceAccount` | Use an existing service account for all the RBAC operations                                                                                           | `nil`                                                                                                       |
 | `ingressController.ingressClass`                | Name of the class to register Kong Ingress Controller (useful when having other Ingress Controllers in the cluster)                                   | `nil`                                                                                                       |
@@ -404,5 +404,3 @@ $ helm upgrade my-release bitnami/kong \
 ```
 
 > Note: you need to substitute the placeholders _[POSTGRESQL_PASSWORD]_ with the values obtained from instructions in the installation notes.
-
-
